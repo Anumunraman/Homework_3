@@ -1,0 +1,13 @@
+﻿Console.WriteLine("Введите координаты А: ");
+int AX = Convert.ToInt32(Console.ReadLine());
+int AY = Convert.ToInt32(Console.ReadLine());
+int AZ = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты B: ");
+int BX = Convert.ToInt32(Console.ReadLine());
+int BY = Convert.ToInt32(Console.ReadLine());
+int BZ = Convert.ToInt32(Console.ReadLine());
+double Length = 0;
+double Length1 = 0;
+Length = Math.Sqrt(Math.Pow(AX-BX,2)+Math.Pow(AY-BY,2));
+Length1 = Math.Sqrt(Math.Pow(Length,2)+Math.Pow(AZ-BZ,2));
+Console.WriteLine(Length1);
